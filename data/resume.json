@@ -1,0 +1,348 @@
+﻿{
+  "meta": {
+    "defaultLang": "ko",
+    "supportedLangs": ["ko", "en"]
+  },
+  "profile": {
+    "name": {
+      "ko": "김도윤",
+      "en": "Doyoon Kim"
+    },
+    "title": {
+      "ko": "정보보안 엔지니어",
+      "en": "Information Security Engineer"
+    },
+    "location": {
+      "ko": "서울, 대한민국",
+      "en": "Seoul, South Korea"
+    },
+    "summary": {
+      "ko": "클라우드 및 웹 서비스 환경에서 위협을 탐지하고 대응하는 보안 엔지니어입니다. 취약점 진단 자동화, 로그 기반 이상징후 탐지, 침해사고 대응 체계 개선을 주도했습니다.",
+      "en": "Security engineer focused on threat detection and response across cloud and web services. I have led vulnerability automation, log-based anomaly detection, and incident response improvements."
+    },
+    "photo": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80",
+    "contacts": [
+      {
+        "label": "Email",
+        "value": "doyoon.kim.sec@example.com",
+        "url": "mailto:doyoon.kim.sec@example.com"
+      },
+      {
+        "label": "LinkedIn",
+        "value": "doyoon-kim-security",
+        "url": "https://www.linkedin.com/in/doyoon-kim-security"
+      },
+      {
+        "label": "GitHub",
+        "value": "doyoon-sec",
+        "url": "https://github.com/doyoon-sec"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "key": "work",
+      "title": {
+        "ko": "경력",
+        "en": "Work Experience"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "BlueShield Security Lab",
+            "en": "BlueShield Security Lab"
+          },
+          "subTitle": {
+            "ko": "시니어 정보보안 엔지니어",
+            "en": "Senior Information Security Engineer"
+          },
+          "period": "2022.03 - 현재",
+          "location": {
+            "ko": "서울, 대한민국",
+            "en": "Seoul, South Korea"
+          },
+          "bullets": {
+            "ko": [
+              "AWS 기반 서비스 40여 개 자산에 대한 취약점 스캐닝 파이프라인 구축",
+              "WAF/EDR/SIEM 로그 통합으로 평균 탐지 시간(MTTD) 45% 단축",
+              "랜섬웨어 대응 모의훈련 운영 및 대응 플레이북 표준화",
+              "보안 점검 자동화 도입으로 분기 점검 소요 시간 60% 절감"
+            ],
+            "en": [
+              "Built vulnerability scanning pipelines across 40+ AWS service assets",
+              "Reduced MTTD by 45% through integrated WAF/EDR/SIEM telemetry",
+              "Ran ransomware tabletop exercises and standardized response playbooks",
+              "Cut quarterly security assessment time by 60% via automation"
+            ]
+          }
+        },
+        {
+          "title": {
+            "ko": "FinGate Payments",
+            "en": "FinGate Payments"
+          },
+          "subTitle": {
+            "ko": "정보보안 엔지니어",
+            "en": "Information Security Engineer"
+          },
+          "period": "2019.07 - 2022.02",
+          "location": {
+            "ko": "판교, 대한민국",
+            "en": "Pangyo, South Korea"
+          },
+          "bullets": {
+            "ko": [
+              "전자금융 환경 모의해킹 및 취약점 관리 프로세스 운영",
+              "계정 탈취/이상 로그인 탐지 룰 고도화로 오탐율 30% 감소",
+              "PCI DSS 대응 문서 및 기술 통제 항목 정비",
+              "사내 개발조직 대상 보안코딩 가이드 및 교육 체계 수립"
+            ],
+            "en": [
+              "Operated pentesting and vulnerability management for payment systems",
+              "Reduced false positives by 30% with account takeover detection tuning",
+              "Maintained PCI DSS evidence and technical control requirements",
+              "Established secure coding guides and security training for dev teams"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "education",
+      "title": {
+        "ko": "학력",
+        "en": "Education"
+      },
+      "items": [
+        {
+          "level": "high",
+          "title": {
+            "ko": "서울 사이버보안고등학교",
+            "en": "Seoul Cyber Security High School"
+          },
+          "subTitle": {
+            "ko": "정보보안과",
+            "en": "Information Security"
+          },
+          "period": "2012 - 2015",
+          "location": {
+            "ko": "서울, 대한민국",
+            "en": "Seoul, South Korea"
+          },
+          "bullets": {
+            "ko": ["교내 해킹방어대회 우수상"],
+            "en": ["Awarded at school cyber defense competition"]
+          }
+        },
+        {
+          "level": "university",
+          "title": {
+            "ko": "한국디지털대학교",
+            "en": "Korea Digital University"
+          },
+          "subTitle": {
+            "ko": "컴퓨터공학 / 정보보호 트랙",
+            "en": "Computer Science / Information Security Track"
+          },
+          "period": "2015 - 2019",
+          "location": {
+            "ko": "대한민국",
+            "en": "South Korea"
+          },
+          "bullets": {
+            "ko": ["캡스톤: 로그 기반 침입 탐지 시스템", "졸업 프로젝트 최우수"],
+            "en": ["Capstone: log-based intrusion detection system", "Top graduation project award"]
+          }
+        }
+      ]
+    },
+    {
+      "key": "projects",
+      "title": {
+        "ko": "프로젝트",
+        "en": "Projects"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "Cloud Threat Detection Toolkit",
+            "en": "Cloud Threat Detection Toolkit"
+          },
+          "subTitle": {
+            "ko": "설계/개발",
+            "en": "Design/Development"
+          },
+          "period": "2024",
+          "location": {
+            "ko": "사내 프로젝트",
+            "en": "Internal Project"
+          },
+          "bullets": {
+            "ko": [
+              "CloudTrail, GuardDuty, VPC Flow 로그 기반 이상징후 상관분석 룰셋 개발",
+              "Slack/Email 연동 알림 체계 구축",
+              "IR 티켓 자동 생성으로 대응 지연 감소"
+            ],
+            "en": [
+              "Developed correlation rules over CloudTrail, GuardDuty, and VPC Flow logs",
+              "Implemented Slack/Email integrated alerting",
+              "Reduced response delays with automatic IR ticket generation"
+            ]
+          }
+        },
+        {
+          "title": {
+            "ko": "Secure SDLC Rollout",
+            "en": "Secure SDLC Rollout"
+          },
+          "subTitle": {
+            "ko": "보안 아키텍트",
+            "en": "Security Architect"
+          },
+          "period": "2023",
+          "location": {
+            "ko": "사내 프로젝트",
+            "en": "Internal Project"
+          },
+          "bullets": {
+            "ko": [
+              "SAST/DAST/오픈소스 취약점 점검을 CI 파이프라인에 통합",
+              "릴리스 차단 기준 정의 및 운영",
+              "개발팀 보안 챔피언 프로그램 운영"
+            ],
+            "en": [
+              "Integrated SAST/DAST/SCA checks into CI pipelines",
+              "Defined and operated release security gates",
+              "Ran a security champions program across dev teams"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "certifications",
+      "title": {
+        "ko": "자격",
+        "en": "Certifications"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "CISSP",
+            "en": "CISSP"
+          },
+          "subTitle": {
+            "ko": "ISC2",
+            "en": "ISC2"
+          },
+          "period": "2023",
+          "location": {
+            "ko": "국제",
+            "en": "Global"
+          },
+          "bullets": {
+            "ko": [],
+            "en": []
+          }
+        },
+        {
+          "title": {
+            "ko": "정보보안기사",
+            "en": "Engineer Information Security"
+          },
+          "subTitle": {
+            "ko": "한국산업인력공단",
+            "en": "HRD Korea"
+          },
+          "period": "2020",
+          "location": {
+            "ko": "대한민국",
+            "en": "South Korea"
+          },
+          "bullets": {
+            "ko": [],
+            "en": []
+          }
+        }
+      ]
+    },
+    {
+      "key": "publications",
+      "title": {
+        "ko": "발표/기고",
+        "en": "Publications"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "실무 중심 클라우드 침해대응 플레이북 설계",
+            "en": "Designing Practical Cloud Incident Response Playbooks"
+          },
+          "url": "https://example.com/security-playbook",
+          "subTitle": {
+            "ko": "사내 기술블로그 기고",
+            "en": "Internal engineering blog"
+          },
+          "period": "2024.11",
+          "location": {
+            "ko": "서울",
+            "en": "Seoul"
+          },
+          "bullets": {
+            "ko": [],
+            "en": []
+          }
+        }
+      ]
+    },
+    {
+      "key": "contacts",
+      "title": {
+        "ko": "연락처",
+        "en": "Contacts"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "이메일",
+            "en": "Email"
+          },
+          "url": "mailto:doyoon.kim.sec@example.com",
+          "subTitle": {
+            "ko": "doyoon.kim.sec@example.com",
+            "en": "doyoon.kim.sec@example.com"
+          },
+          "period": "",
+          "location": {
+            "ko": "",
+            "en": ""
+          },
+          "bullets": {
+            "ko": [],
+            "en": []
+          }
+        },
+        {
+          "title": {
+            "ko": "깃허브",
+            "en": "GitHub"
+          },
+          "url": "https://github.com/doyoon-sec",
+          "subTitle": {
+            "ko": "github.com/doyoon-sec",
+            "en": "github.com/doyoon-sec"
+          },
+          "period": "",
+          "location": {
+            "ko": "",
+            "en": ""
+          },
+          "bullets": {
+            "ko": [],
+            "en": []
+          }
+        }
+      ]
+    }
+  ]
+}

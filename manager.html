@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Manager</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./">Structured CV</a>
+    <nav class="top-actions">
+      <a class="top-link" href="./">View CV</a>
+    </nav>
+  </header>
+
+  <main class="manager-grid">
+    <section class="card manager-panel">
+      <h1>Share URL Builder</h1>
+      <div class="field">
+        <label>Language</label>
+        <div class="check-row">
+          <label><input type="radio" name="lang" value="ko"> ko</label>
+          <label><input type="radio" name="lang" value="en" checked> en</label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="name-override">Name override</label>
+        <input id="name-override" type="text" placeholder="Optional display name">
+      </div>
+      <fieldset class="field">
+        <legend>Show Sections</legend>
+        <div id="section-boxes" class="check-grid"></div>
+      </fieldset>
+      <fieldset class="field">
+        <legend>Education level filter (edu param)</legend>
+        <div class="check-row">
+          <label><input type="checkbox" class="edu-box" value="middle"> middle</label>
+          <label><input type="checkbox" class="edu-box" value="high"> high</label>
+          <label><input type="checkbox" class="edu-box" value="university"> university</label>
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="generated-url">Generated URL</label>
+        <textarea id="generated-url" rows="4" readonly></textarea>
+      </div>
+      <div class="button-row">
+        <button id="copy-url" type="button">Copy URL</button>
+        <a id="open-url" class="button-link" href="./" target="_blank" rel="noopener">Open</a>
+      </div>
+    </section>
+
+    <section class="card manager-panel">
+      <h2>JSON Editor</h2>
+      <p class="hint">Edit, preview, and export. Saved locally in your browser until you download.</p>
+      <textarea id="json-editor" rows="26" spellcheck="false"></textarea>
+      <div class="button-row">
+        <button id="apply-json" type="button">Apply to Preview</button>
+        <button id="download-json" type="button">Download JSON</button>
+        <button id="reset-json" type="button">Reset from File</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/manager.js" defer></script>
+</body>
+</html>
