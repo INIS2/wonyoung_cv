@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Structured CV</title>
-  <meta name="description" content="Structured bilingual CV template with URL parameter controls.">
+  <meta name="description" content="Structured bilingual CV template with tree-based visibility controls.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -19,34 +19,86 @@
       </svg>
     </a>
     <nav class="top-actions">
-      <div id="lang-toggle-group" class="lang-toggle" aria-label="Language" data-tooltip="언어">
-        <button id="lang-ko" class="lang-option" type="button" data-lang="ko">한</button>
+      <div id="lang-toggle-group" class="lang-toggle" aria-label="Language" data-tooltip="Language">
+        <button id="lang-ko" class="lang-option" type="button" data-lang="ko">KO</button>
         <button id="lang-en" class="lang-option" type="button" data-lang="en">EN</button>
       </div>
-      <button id="share-action" class="icon-action" type="button" aria-label="Share" data-tooltip="공유">
+      <button id="share-action" class="icon-action" type="button" aria-label="Share" data-tooltip="Share">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
           <path d="M11 13l9 -9"></path>
           <path d="M15 4h5v5"></path>
         </svg>
       </button>
-      <button id="print-action" class="icon-action" type="button" aria-label="Print" data-tooltip="인쇄">
+      <button id="print-action" class="icon-action" type="button" aria-label="Print" data-tooltip="Print">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2"></path>
           <path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4"></path>
           <path d="M7 15a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2z"></path>
         </svg>
       </button>
-      <button id="settings-action" class="icon-action" type="button" aria-label="Settings" data-tooltip="설정">
+      <button id="settings-action" class="icon-action" type="button" aria-label="Filters" data-tooltip="Filters" aria-expanded="false" aria-controls="filter-drawer">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 15a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z"></path>
-          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06 .06a2 2 0 1 1 -2.83 2.83l-.06 -.06a1.65 1.65 0 0 0 -1.82 -.33a1.65 1.65 0 0 0 -1 1.51v.17a2 2 0 1 1 -4 0v-.1a1.65 1.65 0 0 0 -1.08 -1.54a1.65 1.65 0 0 0 -1.82 .33l-.06 .06a2 2 0 1 1 -2.83 -2.83l.06 -.06a1.65 1.65 0 0 0 .33 -1.82a1.65 1.65 0 0 0 -1.51 -1h-.17a2 2 0 1 1 0 -4h.1a1.65 1.65 0 0 0 1.54 -1.08a1.65 1.65 0 0 0 -.33 -1.82l-.06 -.06a2 2 0 1 1 2.83 -2.83l.06 .06a1.65 1.65 0 0 0 1.82 .33h.08a1.65 1.65 0 0 0 1 -1.51v-.17a2 2 0 1 1 4 0v.1a1.65 1.65 0 0 0 1.08 1.54a1.65 1.65 0 0 0 1.82 -.33l.06 -.06a2 2 0 1 1 2.83 2.83l-.06 .06a1.65 1.65 0 0 0 -.33 1.82v.08a1.65 1.65 0 0 0 1.51 1h.17a2 2 0 1 1 0 4h-.1a1.65 1.65 0 0 0 -1.54 1.08z"></path>
+          <path d="M4 6h16"></path>
+          <path d="M7 12h10"></path>
+          <path d="M10 18h4"></path>
         </svg>
       </button>
     </nav>
   </header>
 
   <main id="app" class="layout" aria-live="polite"></main>
+
+  <div id="filter-backdrop" class="filter-backdrop" hidden></div>
+  <aside id="filter-drawer" class="filter-drawer" aria-hidden="true">
+    <div class="filter-drawer-inner">
+      <div class="filter-head">
+        <div>
+          <p class="eyebrow">Control Rail</p>
+          <h2 id="control-title">Tree Filter</h2>
+          <p id="control-hint" class="hint">Select any node from the JSON tree to include or exclude it from the live CV.</p>
+        </div>
+        <button id="close-filters-action" class="icon-action filter-close" type="button" aria-label="Close filters">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#828282" stroke-width="2" stroke-linecap="round">
+            <path d="M6 6l12 12"></path>
+            <path d="M18 6l-12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="control-actions">
+        <button id="show-all-action" type="button">Show All</button>
+        <button id="collapse-all-action" type="button">Collapse All</button>
+      </div>
+
+      <section class="share-panel">
+        <div class="card-head">
+          <p class="eyebrow">Share Link</p>
+          <h3>Filtered URL</h3>
+          <p class="hint">Copy a shareable URL with the current filter state.</p>
+        </div>
+        <textarea id="share-url-output" class="share-url-output" rows="3" readonly></textarea>
+        <label id="share-password-row" class="share-option" hidden>
+          <input id="include-password-toggle" type="checkbox">
+          <span>Include `pw` parameter</span>
+        </label>
+        <div class="control-actions">
+          <button id="copy-filter-link-action" type="button">Copy Filter Link</button>
+        </div>
+      </section>
+
+      <div id="tree-controls" class="tree-root" aria-live="polite"></div>
+
+      <section class="source-card">
+        <div class="card-head">
+          <p class="eyebrow">Source View</p>
+          <h3 id="source-title">resume.json</h3>
+          <p id="source-subtitle" class="hint">Select a node to inspect the original source payload.</p>
+        </div>
+        <pre id="source-view" class="source-view"></pre>
+      </section>
+    </div>
+  </aside>
 
   <script src="assets/js/app.js" defer></script>
 </body>

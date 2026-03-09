@@ -4,6 +4,9 @@
   --line: #bdbdbd;
   --text: #2d2d2d;
   --muted: #6a6a6a;
+  --drawer-bg: rgba(255, 255, 255, 0.92);
+  --drawer-line: rgba(45, 45, 45, 0.12);
+  --accent: #b14f2c;
 }
 
 * {
@@ -119,7 +122,8 @@ body {
 }
 
 #share-action svg,
-#print-action svg {
+#print-action svg,
+#settings-action svg {
   width: 32px;
   height: 32px;
 }
@@ -260,73 +264,199 @@ button,
   top: -0.35em;
 }
 
-.manager-grid {
-  width: min(1240px, 96vw);
-  margin: 16px auto;
-  display: grid;
-  grid-template-columns: minmax(320px, 420px) 1fr;
-  gap: 18px;
+.filter-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(22, 22, 22, 0.32);
+  z-index: 40;
 }
 
-.card {
-  background: #fff;
-  border: 1px solid #dedede;
-  border-radius: 12px;
-  padding: 16px;
+.filter-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(420px, 92vw);
+  height: 100vh;
+  background: var(--drawer-bg);
+  border-left: 1px solid var(--drawer-line);
+  box-shadow: -18px 0 50px rgba(0, 0, 0, 0.14);
+  backdrop-filter: blur(16px);
+  transform: translateX(100%);
+  transition: transform 0.18s ease;
+  z-index: 50;
 }
 
-.manager-panel h1,
-.manager-panel h2 {
-  margin: 0 0 12px;
+.filter-drawer.is-open {
+  transform: translateX(0);
+}
+
+.filter-drawer-inner {
+  height: 100%;
+  overflow: hidden;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.filter-close {
+  flex: 0 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
 
 .hint {
-  margin: 0 0 12px;
+  margin: 8px 0 0;
   color: var(--muted);
   font-size: 14px;
+  line-height: 1.45;
 }
 
-.field {
-  margin-bottom: 14px;
+.control-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0 0 14px;
 }
 
-.field label,
-.field legend {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 7px;
+.share-panel {
+  margin-bottom: 16px;
+  padding: 10px 0 4px;
+  border-top: 1px solid rgba(45, 45, 45, 0.08);
+  border-bottom: 1px solid rgba(45, 45, 45, 0.08);
 }
 
-select,
-input[type="text"],
-textarea {
+.share-url-output {
   width: 100%;
   border: 1px solid #d7d7d7;
   border-radius: 8px;
   padding: 9px 10px;
   font: inherit;
+  resize: none;
+  background: #fff;
+  color: var(--text);
+  margin: 8px 0 10px;
 }
 
-textarea {
-  resize: vertical;
-}
-
-.check-row {
+.share-option {
   display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: var(--text);
 }
 
-.check-grid {
+.share-option input {
+  margin: 0;
+}
+
+.tree-root {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  gap: 2px;
+  margin-bottom: 18px;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
 }
 
-.button-row {
+.tree-node {
+  --depth: 0;
+}
+
+.tree-branch {
+  border-left: 1px solid rgba(45, 45, 45, 0.08);
+  margin-left: 8px;
+}
+
+.tree-branch > summary {
+  list-style: none;
+}
+
+.tree-branch > summary::-webkit-details-marker {
+  display: none;
+}
+
+.tree-row {
+  margin-left: calc(var(--depth) * 10px);
   display: flex;
+  align-items: center;
   gap: 8px;
-  flex-wrap: wrap;
+  min-height: 34px;
+  border-radius: 8px;
+  padding: 3px 8px;
+}
+
+.tree-row.is-selected {
+  background: rgba(177, 79, 44, 0.08);
+}
+
+.tree-check {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+}
+
+.tree-label {
+  flex: 1;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.tree-children {
+  display: grid;
+  gap: 2px;
+  padding-bottom: 4px;
+}
+
+.source-card {
+  flex: 0 0 auto;
+  padding-top: 8px;
+  border-top: 1px solid rgba(45, 45, 45, 0.08);
+}
+
+.card-head h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.source-view {
+  margin: 10px 0 0;
+  background: #221b15;
+  color: #f5e9dc;
+  border-radius: 12px;
+  padding: 12px;
+  min-height: 200px;
+  max-height: 34vh;
+  overflow: auto;
+  font-family: "Cascadia Code", "Consolas", monospace;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.manager-simple {
+  width: min(860px, calc(100vw - 32px));
+  margin: 18px auto 48px;
 }
 
 @media (max-width: 900px) {
@@ -367,10 +497,6 @@ textarea {
     flex-direction: column;
     gap: 2px;
   }
-
-  .manager-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media print {
@@ -378,7 +504,9 @@ textarea {
     background: #fff !important;
   }
 
-  .topbar {
+  .topbar,
+  .filter-backdrop,
+  .filter-drawer {
     display: none !important;
   }
 
