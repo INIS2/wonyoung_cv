@@ -1,0 +1,218 @@
+
+
+resume.json
+├─ index.html
+├─ README.md
+├─ assets/
+│  ├─ css/
+│  │  └─ style.css
+│  └─ js/
+│     ├─ app.js
+│     ├─ filter.js        # optional
+│     └─ filter.zip       # optional
+├─ data/
+│  ├─ resume.json
+│  ├─ *.json
+│  └─ *.zip
+└─ refer/
+
+
+
+
+----------------------------------------------------------------
+전체 구조
+----------------------------------------------------------------
+resume.json
+├─ lang
+├─ profile
+│  ├─ name
+│  ├─ caption
+│  ├─ address
+│  ├─ photo
+│  └─ jp
+├─ sections
+│  ├─ About
+│  ├─ Work Experience[
+│     ├─ {label: ,text: , img: }
+│     ├─ {label: ,text: , img: }
+            ]
+│  ├─ Education
+│  ├─ Skills
+│  ├─ Awards
+│  ├─ Projects
+│  ├─ Certifications
+│  ├─ Publications
+│  └─ Contact
+│     ├─ Email
+│     ├─ Phone
+│     └─ Link[
+│         ├─ {label: ,text: ,img: ,url: }
+│         ├─ {label: ,text: ,img: ,url: }
+            ]
+----------------------------------------------------------------
+언어별 세부(ko/en/jp) 구조
+----------------------------------------------------------------
+resume.json
+├─ lang/
+│  ├─ en
+│  ├─ ko
+│  └─ jp
+├─ profile/
+│  ├─ name
+│  │  ├─ en
+│  │  ├─ ko
+│  │  └─ jp
+│  ├─ title
+│  │  ├─ en
+│  │  ├─ ko
+│  │  └─ jp
+│  └─ js/
+│  │  ├─ en
+│  │  ├─ ko
+│     └─ jp
+
+
+
+
+
+
+  "sections": [
+    {
+      "section"{
+        "en": "Work Experience"
+        "ko": "경력",
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "BlueShield Security Lab",
+            "en": "BlueShield Security Lab"
+          },
+          "subTitle": {
+
+
+
+
+
+  "sections": [
+    {
+      "section"{
+        "en": "Work Experience"
+        "ko": "경력",
+      },
+      "items": [
+        {
+          "title": {
+            "en": "BlueShield Security Lab"
+            "ko": "블루쉴드 시큐리티 랩",
+          },
+          "subTitle": {
+            "en": "Senior Information Security Engineer"
+            "ko": "시니어 정보보안 엔지니어",
+          },
+          "period": {
+            "from": "2020.01.01",
+            "to": "2021.01.01"
+          },
+          "location": {
+            "en": "Seoul, South Korea"
+            "ko": "서울, 대한민국",
+          },
+          "contents": {
+            "en": "**markdown text**"
+            "ko": "**markdown text**",
+          },
+          "img": {
+            "source": "/qwe/qwe"
+            "text": "text",
+          }
+        },
+        {
+          "title": {
+            "en": "BlueShield Security Lab"
+            "ko": "블루쉴드 시큐리티 랩",
+          },
+          "subTitle": {
+            "en": "Senior Information Security Engineer"
+            "ko": "시니어 정보보안 엔지니어",
+          },
+          "period": {
+            "from": "2020.01.01",
+            "to": "2021.01.01"
+          },
+          "location": {
+            "en": "Seoul, South Korea"
+            "ko": "서울, 대한민국",
+          },
+          "contents": {
+            "en": "**markdown text**"
+            "ko": "**markdown text**",
+          },
+            "img": {
+            "source": "/qwe/qwe"
+            "text": "text",
+          }
+        }
+      ]
+    },
+     {
+      "section"{
+        "en": "Education"
+        "ko": "학력",
+      },
+      "items": [
+        {
+          "title": {
+            "en": "OO University"
+            "ko": "OO 대학교",
+          },
+          "subTitle": {
+            "en": "Computer Science"
+            "ko": "컴퓨터공학",
+          },
+          "period": {
+            "from": "2020.01.01",
+            "to": "2021.01.01"
+          },
+          "location": {
+            "en": "Seoul, South Korea"
+            "ko": "서울, 대한민국",
+          },
+          "contents": {
+            "en": "**markdown text**"
+            "ko": "**markdown text**",
+          },
+            "img": {
+            "source": "/qwe/qwe"
+            "text": "text",
+          }
+        },
+        {
+          "title": {
+            "en": "OO HighSchool"
+            "ko": "OO 고등학교",
+          },
+          "subTitle": {
+            "en": "inmun"
+            "ko": "인문계",
+          },
+          "period": {
+            "from": "2020.01.01",
+            "to": "2021.01.01"
+          },
+          "location": {
+            "en": "Seoul, South Korea"
+            "ko": "서울, 대한민국",
+          },
+          "contents": {
+            "en": "**markdown text**"
+            "ko": "**markdown text**",
+          },
+            "img": {
+            "source": "/qwe/qwe"
+            "text": "text",
+          }
+        }
+      ]
+    }
+  ]

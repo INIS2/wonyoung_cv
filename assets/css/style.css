@@ -1,6 +1,6 @@
 :root {
-  --bg: #ececec;
-  --paper: #f8f8f8;
+  --bg: #ffffff;
+  --paper: #fefefe;
   --line: #bdbdbd;
   --text: #2d2d2d;
   --muted: #6a6a6a;
@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 20px;
+  padding: 7px 16px;
 }
 
 .brand-logo {
@@ -70,8 +70,8 @@ body {
 }
 
 .icon-action {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border: 1px solid transparent;
   background: transparent;
   border-radius: 10px;
@@ -93,13 +93,13 @@ body {
   background: #f1f1f1;
   border: 1px solid #d2d2d2;
   border-radius: 10px;
-  padding: 4px;
+  padding: 3px;
   gap: 2px;
 }
 
 .lang-option {
   min-width: 46px;
-  height: 38px;
+  height: 32px;
   border: 0;
   border-radius: 7px;
   background: transparent;
@@ -121,11 +121,11 @@ body {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), inset 0 0 0 1px rgba(79, 79, 79, 0.2);
 }
 
-#share-action svg,
-#print-action svg,
-#settings-action svg {
-  width: 32px;
-  height: 32px;
+.topbar #share-action svg,
+.topbar #print-action svg,
+.topbar #settings-action svg {
+  width: 34px;
+  height: 34px;
 }
 
 button,
@@ -147,7 +147,7 @@ button,
 
 .cv-paper {
   background: var(--paper);
-  border: 1px solid #d5d5d5;
+  border: 1px solid #f0f0f0;
   padding: 18px;
 }
 
@@ -158,12 +158,12 @@ button,
 .cv-header-row {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
 }
 
 .photo {
-  width: 70px;
-  height: 70px;
+  width: 84px;
+  height: 84px;
   border-radius: 999px;
   object-fit: cover;
   border: 1px solid #9c9c9c;
