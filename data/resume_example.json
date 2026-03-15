@@ -1,0 +1,486 @@
+{
+  "_comment": [
+    "resume example v0.1(260315)",
+    "",
+    ""
+  ],
+  "lang": [
+    "en",
+    "ko",
+    "jp"
+  ],
+  "profile": {
+    "top": {
+      "name": {
+        "en": "Doyoon Kim",
+        "ko": "김도윤",
+        "jp": "キム・ドユン"
+      },
+      "position": {
+        "en": "Information Security Engineer",
+        "ko": "정보보안 엔지니어",
+        "jp": "情報セキュリティエンジニア"
+      },
+      "location": {
+        "en": "Seoul, South Korea",
+        "ko": "서울, 대한민국",
+        "jp": "韓国 ソウル"
+      },
+      "photo": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80",
+      "introduction": {
+        "en": "Security engineer focused on threat detection and response across cloud and web services.",
+        "ko": "클라우드 및 웹 서비스 환경에서 위협 탐지와 대응에 집중하는 보안 엔지니어입니다.",
+        "jp": "クラウドおよびWebサービス環境で脅威の検知と対応に注力するセキュリティエンジニアです。"
+      }
+    },
+    "Contact": {
+      "Email": "doyoon.kim.sec@example.com",
+      "Phone": "",
+      "Link": [
+        {
+          "show head": {
+            "en": "Link",
+            "ko": "링크",
+            "jp": "リンク"
+          }
+        },
+        {
+          "label": {
+            "en": "LinkedIn",
+            "ko": "링크드인",
+            "jp": "LinkedIn"
+          },
+          "text": {
+            "en": "doyoon-kim-security",
+            "ko": "doyoon-kim-security",
+            "jp": "doyoon-kim-security"
+          },
+          "img": "",
+          "url": "https://www.linkedin.com/in/doyoon-kim-security"
+        },
+        {
+          "label": {
+            "en": "GitHub",
+            "ko": "깃허브",
+            "jp": "GitHub"
+          },
+          "text": {
+            "en": "doyoon-sec",
+            "ko": "doyoon-sec",
+            "jp": "doyoon-sec"
+          },
+          "img": "",
+          "url": "https://github.com/doyoon-sec"
+        }
+      ]
+    }
+  },
+  "sections": {
+    "Work Experience": [
+      {
+        "show head": {
+          "en": "Work Experience",
+          "ko": "경력",
+          "jp": "職務経歴"
+        }
+      },
+      {
+        "img": "https://logo.clearbit.com/blueshieldsecuritylab.com",
+        "company": {
+          "en": "BlueShield Security Lab",
+          "ko": "BlueShield Security Lab",
+          "jp": "BlueShield Security Lab"
+        },
+        "position": {
+          "en": "Senior Information Security Engineer",
+          "ko": "시니어 정보보안 엔지니어",
+          "jp": "シニア情報セキュリティエンジニア"
+        },
+        "period": {
+          "en": "Mar 2022 - Present",
+          "ko": "2022.03 - 현재",
+          "jp": "2022.03 - 現在"
+        },
+        "location": {
+          "en": "Seoul, South Korea",
+          "ko": "서울, 대한민국",
+          "jp": "韓国 ソウル"
+        },
+        "description": {
+          "en": "- Built vulnerability scanning pipelines across 40+ AWS assets.\n- Reduced MTTD by 45% with integrated WAF, EDR, and SIEM telemetry.",
+          "ko": "- 40개 이상의 AWS 자산에 대한 취약점 스캐닝 파이프라인을 구축했습니다.\n- WAF, EDR, SIEM 로그를 통합해 평균 탐지 시간을 45% 단축했습니다.",
+          "jp": "- 40以上のAWS資産に対する脆弱性スキャンパイプラインを構築しました。\n- WAF、EDR、SIEMログの統合により平均検知時間を45%短縮しました。"
+        }
+      },
+      {
+        "img": "https://logo.clearbit.com/fingatepayments.com",
+        "company": {
+          "en": "FinGate Payments",
+          "ko": "FinGate Payments",
+          "jp": "FinGate Payments"
+        },
+        "position": {
+          "en": "Information Security Engineer",
+          "ko": "정보보안 엔지니어",
+          "jp": "情報セキュリティエンジニア"
+        },
+        "period": {
+          "en": "Jul 2019 - Feb 2022",
+          "ko": "2019.07 - 2022.02",
+          "jp": "2019.07 - 2022.02"
+        },
+        "location": {
+          "en": "Pangyo, South Korea",
+          "ko": "판교, 대한민국",
+          "jp": "韓国 板橋"
+        },
+        "description": {
+          "en": "- Operated pentesting and vulnerability management for payment systems.\n- Maintained PCI DSS controls and documentation.",
+          "ko": "- 전자결제 시스템에 대한 모의해킹과 취약점 관리 업무를 수행했습니다.\n- PCI DSS 통제 항목과 관련 문서를 운영 및 정비했습니다.",
+          "jp": "- 電子決済システムに対するペネトレーションテストと脆弱性管理を担当しました。\n- PCI DSSの統制項目と関連文書を整備・運用しました。"
+        }
+      }
+    ],
+    "Education": [
+      {
+        "show head": {
+          "en": "Education",
+          "ko": "학력",
+          "jp": "学歴"
+        }
+      },
+      {
+        "school,institution": {
+          "en": "Seoul Cyber Security High School",
+          "ko": "서울사이버보안고등학교",
+          "jp": "ソウルサイバーセキュリティ高校"
+        },
+        "major,degree": {
+          "en": "Information Security",
+          "ko": "정보보안과",
+          "jp": "情報セキュリティ学科"
+        },
+        "period": {
+          "en": "2012 - 2015",
+          "ko": "2012 - 2015",
+          "jp": "2012 - 2015"
+        },
+        "location": {
+          "en": "Seoul, South Korea",
+          "ko": "서울, 대한민국",
+          "jp": "韓国 ソウル"
+        },
+        "description": {
+          "en": "- Received an award at the school cyber defense competition.",
+          "ko": "- 교내 사이버 방어 대회에서 수상했습니다.",
+          "jp": "- 校内サイバー防御大会で受賞しました。"
+        }
+      },
+      {
+        "school,institution": {
+          "en": "Korea Digital University",
+          "ko": "한국디지털대학교",
+          "jp": "韓国デジタル大学"
+        },
+        "major,degree": {
+          "en": "Computer Science / Information Security Track",
+          "ko": "컴퓨터공학 / 정보보호 트랙",
+          "jp": "コンピュータ工学 / 情報保護トラック"
+        },
+        "period": {
+          "en": "2015 - 2019",
+          "ko": "2015 - 2019",
+          "jp": "2015 - 2019"
+        },
+        "location": {
+          "en": "South Korea",
+          "ko": "대한민국",
+          "jp": "韓国"
+        },
+        "description": {
+          "en": "- Completed a capstone project on a log-based intrusion detection system.\n- Received the top graduation project award.",
+          "ko": "- 로그 기반 침입 탐지 시스템을 주제로 캡스톤 프로젝트를 수행했습니다.\n- 졸업 프로젝트 최우수상을 수상했습니다.",
+          "jp": "- ログベースの侵入検知システムをテーマに卒業研究を行いました。\n- 卒業プロジェクト最優秀賞を受賞しました。"
+        }
+      }
+    ],
+    "Skills": [
+      {
+        "show head": {
+          "en": "Skills",
+          "ko": "기술",
+          "jp": "スキル"
+        }
+      },
+      {
+        "category": {
+          "en": "Security Operations",
+          "ko": "보안 운영",
+          "jp": "セキュリティ運用"
+        },
+        "description": {
+          "en": "Threat detection and response, SIEM rule engineering, and vulnerability management.",
+          "ko": "위협 탐지 및 대응, SIEM 룰 엔지니어링, 취약점 관리.",
+          "jp": "脅威検知と対応、SIEMルール設計、脆弱性管理。"
+        }
+      },
+      {
+        "category": {
+          "en": "Platforms and Tools",
+          "ko": "플랫폼 및 도구",
+          "jp": "プラットフォームとツール"
+        },
+        "description": {
+          "en": "AWS, WAF, EDR, SIEM, CloudTrail, GuardDuty, SAST, and DAST.",
+          "ko": "AWS, WAF, EDR, SIEM, CloudTrail, GuardDuty, SAST, DAST.",
+          "jp": "AWS、WAF、EDR、SIEM、CloudTrail、GuardDuty、SAST、DAST。"
+        }
+      }
+    ],
+    "Awards": [
+      {
+        "show head": {
+          "en": "Awards",
+          "ko": "수상",
+          "jp": "受賞"
+        }
+      },
+      {
+        "title": {
+          "en": "School Cyber Defense Competition Award",
+          "ko": "교내 사이버 방어 대회 수상",
+          "jp": "校内サイバー防御大会 受賞"
+        },
+        "Location,organization": {
+          "en": "Seoul, Seoul Cyber Security High School",
+          "ko": "서울, 서울사이버보안고등학교",
+          "jp": "ソウル、ソウルサイバーセキュリティ高校"
+        },
+        "date": {
+          "en": "2015",
+          "ko": "2015",
+          "jp": "2015"
+        },
+        "description": {
+          "en": "Recognized for strong performance in the internal competition.",
+          "ko": "교내 대회에서 우수한 성과를 인정받아 수상했습니다.",
+          "jp": "校内大会で優秀な成果を認められ受賞しました。"
+        }
+      },
+      {
+        "title": {
+          "en": "Top Graduation Project Award",
+          "ko": "졸업 프로젝트 최우수상",
+          "jp": "卒業プロジェクト最優秀賞"
+        },
+        "Location,organization": {
+          "en": "South Korea, Korea Digital University",
+          "ko": "대한민국, 한국디지털대학교",
+          "jp": "韓国、韓国デジタル大学"
+        },
+        "date": {
+          "en": "2019",
+          "ko": "2019",
+          "jp": "2019"
+        },
+        "description": {
+          "en": "Awarded for the log-based intrusion detection capstone.",
+          "ko": "로그 기반 침입 탐지 캡스톤 프로젝트로 수상했습니다.",
+          "jp": "ログベース侵入検知の卒業研究で受賞しました。"
+        }
+      }
+    ],
+    "Projects": [
+      {
+        "show head": {
+          "en": "Projects",
+          "ko": "프로젝트",
+          "jp": "プロジェクト"
+        }
+      },
+      {
+        "name": {
+          "en": "Cloud Threat Detection Toolkit",
+          "ko": "클라우드 위협 탐지 툴킷",
+          "jp": "クラウド脅威検知ツールキット"
+        },
+        "team,organization": {
+          "en": "Security Team, BlueShield Security Lab",
+          "ko": "보안팀, BlueShield Security Lab",
+          "jp": "セキュリティチーム、BlueShield Security Lab"
+        },
+        "role": {
+          "en": "Design and Development",
+          "ko": "설계 및 개발",
+          "jp": "設計および開発"
+        },
+        "period": {
+          "en": "2024",
+          "ko": "2024",
+          "jp": "2024"
+        },
+        "description": {
+          "en": "- Developed correlation rules across CloudTrail, GuardDuty, and VPC Flow Logs.\n- Implemented Slack and email integrated alerting.",
+          "ko": "- CloudTrail, GuardDuty, VPC Flow Logs 기반 상관분석 룰을 개발했습니다.\n- Slack 및 이메일 연동 알림 체계를 구축했습니다.",
+          "jp": "- CloudTrail、GuardDuty、VPC Flow Logsを基盤とした相関分析ルールを開発しました。\n- Slackとメールを連携した通知体制を構築しました。"
+        }
+      },
+      {
+        "name": {
+          "en": "Secure SDLC Rollout",
+          "ko": "보안 SDLC 구축",
+          "jp": "セキュアSDLC導入"
+        },
+        "team,organization": {
+          "en": "Security Architecture Team, BlueShield Security Lab",
+          "ko": "보안 아키텍처 팀, BlueShield Security Lab",
+          "jp": "セキュリティアーキテクチャチーム、BlueShield Security Lab"
+        },
+        "role": {
+          "en": "Security Architect",
+          "ko": "보안 아키텍트",
+          "jp": "セキュリティアーキテクト"
+        },
+        "period": {
+          "en": "2023",
+          "ko": "2023",
+          "jp": "2023"
+        },
+        "description": {
+          "en": "- Integrated SAST, DAST, and SCA checks into CI pipelines.\n- Ran a security champions program for engineering teams.",
+          "ko": "- SAST, DAST, SCA 점검을 CI 파이프라인에 통합했습니다.\n- 개발 조직을 대상으로 보안 챔피언 프로그램을 운영했습니다.",
+          "jp": "- SAST、DAST、SCAチェックをCIパイプラインに統合しました。\n- 開発組織向けにセキュリティチャンピオンプログラムを運営しました。"
+        }
+      }
+    ],
+    "Certifications": [
+      {
+        "show head": {
+          "en": "Certifications",
+          "ko": "자격",
+          "jp": "資格"
+        }
+      },
+      {
+        "name": {
+          "en": "CISSP",
+          "ko": "CISSP",
+          "jp": "CISSP"
+        },
+        "issuing location": {
+          "en": "Global",
+          "ko": "글로벌",
+          "jp": "グローバル"
+        },
+        "issuing organization": {
+          "en": "ISC2",
+          "ko": "ISC2",
+          "jp": "ISC2"
+        },
+        "period": {
+          "en": "2023",
+          "ko": "2023",
+          "jp": "2023"
+        },
+        "description": {
+          "en": "Professional certification covering security architecture, operations, risk management, and incident response.",
+          "ko": "보안 아키텍처, 운영, 위험 관리, 침해사고 대응을 포괄하는 전문 자격입니다.",
+          "jp": "セキュリティアーキテクチャ、運用、リスク管理、インシデント対応を網羅する専門資格です。"
+        }
+      },
+      {
+        "name": {
+          "en": "Engineer Information Security",
+          "ko": "정보보안기사",
+          "jp": "情報セキュリティ技師"
+        },
+        "issuing location": {
+          "en": "South Korea",
+          "ko": "대한민국",
+          "jp": "韓国"
+        },
+        "issuing organization": {
+          "en": "HRD Korea",
+          "ko": "한국산업인력공단",
+          "jp": "韓国産業人力公団"
+        },
+        "period": {
+          "en": "2020",
+          "ko": "2020",
+          "jp": "2020"
+        },
+        "description": {
+          "en": "National certification focused on information security engineering, regulations, and practical defense capabilities.",
+          "ko": "정보보안 공학, 관련 제도, 실무 방어 역량에 중점을 둔 국가 자격입니다.",
+          "jp": "情報セキュリティ工学、関連制度、実務防御能力に重点を置く国家資格です。"
+        }
+      }
+    ],
+    "Publications": [
+      {
+        "show head": {
+          "en": "Publications",
+          "ko": "출판물",
+          "jp": "出版物"
+        }
+      },
+      {
+        "title": {
+          "en": "Designing Practical Cloud Incident Response Playbooks",
+          "ko": "실무 중심 클라우드 침해대응 플레이북 설계",
+          "jp": "実務中心のクラウドインシデント対応プレイブック設計"
+        },
+        "publisher": {
+          "en": "Internal Engineering Blog",
+          "ko": "사내 엔지니어링 블로그",
+          "jp": "社内エンジニアリングブログ"
+        },
+        "date": {
+          "en": "Nov 2024",
+          "ko": "2024.11",
+          "jp": "2024.11"
+        },
+        "url": "https://example.com/security-playbook",
+        "description": {
+          "en": "Article on building incident response playbooks for cloud operations teams.",
+          "ko": "클라우드 운영 조직을 위한 침해대응 플레이북 설계 경험을 정리한 글입니다.",
+          "jp": "クラウド運用組織向けのインシデント対応プレイブック設計経験をまとめた記事です。"
+        }
+      }
+    ],
+    "Contact": {
+      "Email": "doyoon.kim.sec@example.com",
+      "Phone": "",
+      "Link": [
+        {
+          "label": {
+            "en": "LinkedIn",
+            "ko": "링크드인",
+            "jp": "LinkedIn"
+          },
+          "text": {
+            "en": "doyoon-kim-security",
+            "ko": "doyoon-kim-security",
+            "jp": "doyoon-kim-security"
+          },
+          "img": "",
+          "url": "https://www.linkedin.com/in/doyoon-kim-security"
+        },
+        {
+          "label": {
+            "en": "GitHub",
+            "ko": "깃허브",
+            "jp": "GitHub"
+          },
+          "text": {
+            "en": "doyoon-sec",
+            "ko": "doyoon-sec",
+            "jp": "doyoon-sec"
+          },
+          "img": "",
+          "url": "https://github.com/doyoon-sec"
+        }
+      ]
+    }
+  }
+}
