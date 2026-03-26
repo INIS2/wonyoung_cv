@@ -1,0 +1,162 @@
+{
+  "_comment": [
+    "resume example v0.1(260315)",
+    "",
+    ""
+  ],
+  "profile": {
+    "top": {
+      "name": "김도윤",
+      "position": "정보보안 엔지니어",
+      "location": "서울, 대한민국",
+      "photo": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format\u0026fit=crop\u0026w=500\u0026q=80",
+      "introduction": "클라우드 및 웹 서비스 환경에서 위협 탐지와 대응에 집중하는 보안 엔지니어입니다."
+    },
+    "Contact": {
+      "Email": "doyoon.kim.sec@example.com",
+      "Phone": "",
+      "Link": [
+        {
+          "show head": "링크"
+        },
+        {
+          "label": "링크드인",
+          "text": "doyoon-kim-security",
+          "img": "",
+          "url": "https://www.linkedin.com/in/doyoon-kim-security"
+        },
+        {
+          "label": "깃허브",
+          "text": "doyoon-sec",
+          "img": "",
+          "url": "https://github.com/doyoon-sec"
+        }
+      ]
+    }
+  },
+  "sections": {
+    "Work Experience": [
+      {
+        "show head": "경력"
+      },
+      {
+        "company": "BlueShield Security Lab",
+        "location": "서울, 대한민국",
+        "position": "시니어 정보보안 엔지니어",
+        "period/date": "2022.03 - 현재",
+        "description": "- 40개 이상의 AWS 자산에 대한 취약점 스캐닝 파이프라인을 구축했습니다.\n- WAF, EDR, SIEM 로그를 통합해 평균 탐지 시간을 45% 단축했습니다.",
+        "img1": "https://logo.clearbit.com/blueshieldsecuritylab.com",
+        "img2": "https://logo.clearbit.com/blueshieldsecuritylab.com"
+      },
+      {
+        "company": "FinGate Payments",
+        "location": "판교, 대한민국",
+        "position": "정보보안 엔지니어",
+        "period/date": "2019.07 - 2022.02",
+        "description": "- 전자결제 시스템에 대한 모의해킹과 취약점 관리 업무를 수행했습니다.\n- PCI DSS 통제 항목과 관련 문서를 운영 및 정비했습니다.",
+        "img1": "https://logo.clearbit.com/fingatepayments.com"
+      }
+    ],
+    "Education": [
+      {
+        "show head": "학력"
+      },
+      {
+        "school,institution": "서울사이버보안고등학교",
+        "location": "서울, 대한민국",
+        "major/degree": "정보보안과",
+        "period/date": "2012 - 2015",
+        "description": "- 교내 사이버 방어 대회에서 수상했습니다."
+      },
+      {
+        "school,institution": "한국디지털대학교",
+        "location": "대한민국",
+        "major/degree": "컴퓨터공학 / 정보보호 트랙",
+        "period/date": "2015 - 2019",
+        "description": "- 로그 기반 침입 탐지 시스템을 주제로 캡스톤 프로젝트를 수행했습니다.\n- 졸업 프로젝트 최우수상을 수상했습니다."
+      }
+    ],
+    "Skills": [
+      {
+        "show head": "기술"
+      },
+      {
+        "category": "보안 운영",
+        "description": "위협 탐지 및 대응, SIEM 룰 엔지니어링, 취약점 관리."
+      },
+      {
+        "category": "플랫폼 및 도구",
+        "description": "AWS, WAF, EDR, SIEM, CloudTrail, GuardDuty, SAST, DAST."
+      }
+    ],
+    "Awards": [
+      {
+        "show head": "수상"
+      },
+      {
+        "title": "교내 사이버 방어 대회 수상",
+        "location": "서울",
+        "organization": "서울사이버보안고등학교",        
+        "period/date": "2015",
+        "description": "교내 대회에서 우수한 성과를 인정받아 수상했습니다."
+      },
+      {
+        "title": "졸업 프로젝트 최우수상",
+        "Location": "대한민국",
+        "organization": "한국디지털대학교",        
+        "period/date": "2019",
+        "description": "로그 기반 침입 탐지 캡스톤 프로젝트로 수상했습니다."
+      }
+    ],
+    "Projects": [
+      {
+        "show head": "프로젝트"
+      },
+      {
+        "name": "클라우드 위협 탐지 툴킷",
+        "team/organization": "보안팀, BlueShield Security Lab",
+        "role": "설계 및 개발",
+        "period/date": "2024",
+        "description": "- CloudTrail, GuardDuty, VPC Flow Logs 기반 상관분석 룰을 개발했습니다.\n- Slack 및 이메일 연동 알림 체계를 구축했습니다."
+      },
+      {
+        "name": "보안 SDLC 구축",
+        "team/organization": "보안 아키텍처 팀, BlueShield Security Lab",
+        "role": "보안 아키텍트",
+        "period/date": "2023",
+        "description": "- SAST, DAST, SCA 점검을 CI 파이프라인에 통합했습니다.\n- 개발 조직을 대상으로 보안 챔피언 프로그램을 운영했습니다."
+      }
+    ],
+    "Certifications": [
+      {
+        "show head": "자격"
+      },
+      {
+        "name": "CISSP",
+        "issuing location": "글로벌",
+        "issuing organization": "ISC2",
+        "period/date": "2023",
+        "description": "보안 아키텍처, 운영, 위험 관리, 침해사고 대응을 포괄하는 전문 자격입니다."
+      },
+      {
+        "name": "정보보안기사",
+        "issuing location": "대한민국",
+        "issuing organization": "한국산업인력공단",
+        "period/date": "2020",
+        "description": "정보보안 공학, 관련 제도, 실무 방어 역량에 중점을 둔 국가 자격입니다."
+      }
+    ],
+    "Publications": [
+      {
+        "show head": "출판물"
+      },
+      {
+        "title": "실무 중심 클라우드 침해대응 플레이북 설계",
+        "publisher": "사내 엔지니어링 블로그",
+        "Writer": "제1저자",
+        "period/date": "2024.11",
+        "description": "클라우드 운영 조직을 위한 침해대응 플레이북 설계 경험을 정리한 글입니다."
+      }
+    ]
+  }
+}
