@@ -1,9 +1,12 @@
 {
   "_comment": [
     "resume example v0.1(260315)",
-    "",
+    "section 안에는 show head를 제외하고 항목별로, 좌상-우상-좌하-우하-desc-img순",
     ""
   ],
+  "meta":{
+    "lang": "kr"
+  },
   "profile": {
     "top": {
       "name": "김도윤",
